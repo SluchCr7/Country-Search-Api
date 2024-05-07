@@ -11,7 +11,7 @@ const Search = () => {
         const inputData = fetch(`https://restcountries.com/v3.1/${input}`)
         const data = inputData.then(res => res.json())
         // data.then(data => console.log(data))
-    },[])
+    }, [])
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
